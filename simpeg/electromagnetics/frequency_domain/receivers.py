@@ -1,5 +1,3 @@
-import numpy as np
-
 from ... import survey
 from ...utils import validate_string, validate_type, validate_direction
 from discretize.utils import Zero
@@ -323,7 +321,7 @@ class PointMagneticField(BaseRx):
         Receiver locations.
     orientation : {'x', 'y', 'z'}
         Receiver orientation.
-    component : {'real', 'imag', 'complex'}
+    component : {'real', 'imag', 'both', 'complex'}
         Component of the receiver; i.e. 'real' or 'imag'. The options 'both' and
         'complex' are only available for the 1D layered simulations.
     data_type : {'field', 'ppm'}
